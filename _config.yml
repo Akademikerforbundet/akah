@@ -1,0 +1,42 @@
+title: "Akademikerforbundet Håndbøker"
+description: "Tillitsvalgthåndboken og Organisasjonstillitsvalgte"
+remote_theme: just-the-docs/just-the-docs
+url: "https://akademikerforbundet.github.io"
+baseurl: "/akah"
+permalink: pretty
+
+logo: "/assets/img/logo.png"
+favicon_ico: "/assets/img/favicon.ico"
+
+search_enabled: true
+nav_sort: case_insensitive
+color_scheme: light
+heading_anchors: true
+footer_content: "© Akademikerforbundet"
+
+collections:
+  tillitsvalgthandboken:
+    output: true
+    permalink: /tillitsvalgthandboken/:path/
+  organisasjonstillitsvalgte:
+    output: true
+    permalink: /organisasjonstillitsvalgte/:path/
+
+just_the_docs:
+  collections:
+    tillitsvalgthandboken:
+      name: "Tillitsvalgthåndboken"
+      nav_order: 1
+    organisasjonstillitsvalgte:
+      name: "Organisasjonstillitsvalgte"
+      nav_order: 2
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - package.json
+  - package-lock.json
